@@ -1,6 +1,6 @@
 # Welcome to Magic the Gathering AI page
 
-![AI-Interface](/AI-screen.PNG)
+![AI-Interface](/AI-Screen.PNG/)
 
 This monstrosity was a representation of the board state, and there are buttons for most any action you could do.
 
