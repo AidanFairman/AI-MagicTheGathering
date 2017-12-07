@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4EDD0281-6CD5-47F2-91F3-ECC4F7B37077}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MTG_AI</RootNamespace>
+    <AssemblyName>MTG-AI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AI.cs" />
+    <Compile Include="ArtifactEnchant.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="Cardmaker.cs" />
+    <Compile Include="Creature.cs" />
+    <Compile Include="DragonCards\ArmillarySphere.cs" />
+    <Compile Include="DragonCards\BloodmarkMentor.cs" />
+    <Compile Include="DragonCards\BogardanHellkite.cs" />
+    <Compile Include="DragonCards\BogardanRager.cs" />
+    <Compile Include="DragonCards\BreathOfDarigaaz.cs" />
+    <Compile Include="DragonCards\CaptiveFlame.cs" />
+    <Compile Include="DragonCards\CinderWall.cs" />
+    <Compile Include="DragonCards\ClawsOfValakut.cs" />
+    <Compile Include="DragonCards\ConeOfFlame.cs" />
+    <Compile Include="DragonCards\DragonFodder.cs" />
+    <Compile Include="DragonCards\DragonsClaw.cs" />
+    <Compile Include="DragonCards\DragonspeakerShaman.cs" />
+    <Compile Include="DragonCards\DragonWhelp.cs" />
+    <Compile Include="DragonCards\FieryFall.cs" />
+    <Compile Include="DragonCards\FireBellyChangeling.cs" />
+    <Compile Include="DragonCards\Ghostfire.cs" />
+    <Compile Include="DragonCards\Goblin.cs" />
+    <Compile Include="DragonCards\HengeGuardian.cs" />
+    <Compile Include="DragonCards\JawsOfStone.cs" />
+    <Compile Include="DragonCards\KilnmouthDragon.cs" />
+    <Compile Include="DragonCards\MordantDragon.cs" />
+    <Compile Include="DragonCards\Mountain.cs" />
+    <Compile Include="DragonCards\MudbuttonTorchrunner.cs" />
+    <Compile Include="DragonCards\PunishingFire.cs" />
+    <Compile Include="DragonCards\SeethingSong.cs" />
+    <Compile Include="DragonCards\SeismicStrike.cs" />
+    <Compile Include="DragonCards\ShivanHellkite.cs" />
+    <Compile Include="DragonCards\ShivsEmbrace.cs" />
+    <Compile Include="DragonCards\SkirkProspector.cs" />
+    <Compile Include="DragonCards\SpittingEarth.cs" />
+    <Compile Include="DragonCards\TemporaryInsanity.cs" />
+    <Compile Include="DragonCards\ThunderDragon.cs" />
+    <Compile Include="DragonCards\VoraciousDragon.cs" />
+    <Compile Include="GameState.cs" />
+    <Compile Include="KnightCards\Alaborn Cavalier.cs" />
+    <Compile Include="KnightCards\Benalish Lancer.cs" />
+    <Compile Include="KnightCards\Caravan Escort.cs" />
+    <Compile Include="KnightCards\Edge of Autumn.cs" />
+    <Compile Include="KnightCards\Forest.cs" />
+    <Compile Include="KnightCards\Grasslands.cs" />
+    <Compile Include="KnightCards\Griffin Guide.cs" />
+    <Compile Include="KnightCards\GriffinToken.cs" />
+    <Compile Include="KnightCards\Harm%27s Way.cs" />
+    <Compile Include="KnightCards\Heroes Reunion.cs" />
+    <Compile Include="KnightCards\Juniper Order Ranger.cs" />
+    <Compile Include="KnightCards\Kabira Vindicator.cs" />
+    <Compile Include="KnightCards\Kinsbaile Cavalier.cs" />
+    <Compile Include="KnightCards\Knight Exemplar.cs" />
+    <Compile Include="KnightCards\Knight of Meadowgrain.cs" />
+    <Compile Include="KnightCards\Knight of the Reliquary.cs" />
+    <Compile Include="KnightCards\Knight of the White Orchid.cs" />
+    <Compile Include="KnightCards\Knights of Cliffhaven.cs" />
+    <Compile Include="KnightCards\Knotvine Paladin.cs" />
+    <Compile Include="KnightCards\Leonin Skyhunter.cs" />
+    <Compile Include="KnightCards\Lionheart Maverick.cs" />
+    <Compile Include="KnightCards\LoxodonWarhammer.cs" />
+    <Compile Include="KnightCards\Mighty Leap.cs" />
+    <Compile Include="KnightCards\Oblivian Ring.cs" />
+    <Compile Include="KnightCards\Paladin of Prahv.cs" />
+    <Compile Include="KnightCards\Plains.cs" />
+    <Compile Include="KnightCards\Plover Knights.cs" />
+    <Compile Include="KnightCards\Reciprocate.cs" />
+    <Compile Include="KnightCards\Reprisal.cs" />
+    <Compile Include="KnightCards\Sejiri Steppe.cs" />
+    <Compile Include="KnightCards\Selesnya Sanctuary.cs" />
+    <Compile Include="KnightCards\Sigil Blessing.cs" />
+    <Compile Include="KnightCards\Silver Knight.cs" />
+    <Compile Include="KnightCards\Skyhunter Patrol.cs" />
+    <Compile Include="KnightCards\Spidersilk Armor.cs" />
+    <Compile Include="KnightCards\Steward of Valeron.cs" />
+    <Compile Include="KnightCards\Test of Faith.cs" />
+    <Compile Include="KnightCards\Treetop Village.cs" />
+    <Compile Include="KnightCards\White Knight.cs" />
+    <Compile Include="KnightCards\Wilt-Leaf Caviliers.cs" />
+    <Compile Include="KnightCards\Zhalfirin Commander.cs" />
+    <Compile Include="Land.cs" />
+    <Compile Include="MagicAIGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MagicAIGUI.Designer.cs">
+      <DependentUpon>MagicAIGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spell.cs" />
+    <Compile Include="stateMeta.cs" />
+    <Compile Include="TargetEffects\BuffTarget.cs" />
+    <Compile Include="TargetEffects\Damage.cs" />
+    <Compile Include="TargetEffects\Devour.cs" />
+    <Compile Include="TargetEffects\Discard.cs" />
+    <Compile Include="TargetEffects\Exile.cs" />
+    <Compile Include="TargetEffects\GainControl.cs" />
+    <Compile Include="TargetEffects\Protection.cs" />
+    <Compile Include="TargetEffects\ReturnToHand.cs" />
+    <Compile Include="TargetEffects\Tap.cs" />
+    <EmbeddedResource Include="MagicAIGUI.resx">
+      <DependentUpon>MagicAIGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
