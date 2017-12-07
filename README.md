@@ -15,3 +15,5 @@ The AI performed pretty well in the semester-end tournament. This one was the mo
 ### Try it out!
 
 There is an executable in the [root folder](https://github.com/AidanFairman/AI-MagicTheGathering) which will allow someone to play one deck against another. Field states need to be managed manually, but theoretically, 2 of these could play against one another (if you had physical cards for the sets).
+
+To use the AI, Start by making the selections in the bottom right. Then you use the "Advance phase" button and the "More" button in the top to get commands on what to do from the AI. This is meant to be played with physical cards, so the player only uses the interface to update the field state.
